@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="javascript.js"></script>
+    <title>Toss By Sreenath</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Toss By Sreenath</h1>
+      <p class="circle" id="demo"></p>
+      <div class="Cointainer-buttons">
+        <div>
+          <button
+            id="button1"
+            class="Flip"
+            onclick="flipbutton; this.disabled = true;"
+          >
+            Flip
+          </button>
+        </div>
+        <div>
+          <button
+            id="button2"
+            type="button"
+            onClick="window.location.reload();"
+          >
+            Refresh
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // spinner
+
+    // end
+
+    var flipbutton = document.getElementById("button1");
+    flipbutton.onclick = myFunction;
+
+    function myFunction() {
+      document.querySelector(".circle").style.transform = "rotateY(360deg)";
+      document.querySelector(".Flip").style.cursor = "not-allowed";
+      document.querySelector(".Flip").disabled = true;
+      document.querySelector(".Flip").style.opacity = "0.5";
+      function randomNum(myMin, myMax) {
+        return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+      }
+
+      var random = randomNum(0, 1);
+      document.getElementById("demo").innerHTML = arrQuote[random];
+    }
+
+    var arrQuote = ["H ", "T"];
+  </script>
+</html>

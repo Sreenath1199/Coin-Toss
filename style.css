@@ -1,0 +1,57 @@
+body {
+  background-color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+.container {
+  width: fit-content;
+  height: auto;
+  margin-left: 20%;
+  margin: 5%;
+  overflow-x: hidden;
+  box-shadow: 10px 10px 10px 5px rgb(181, 181, 253);
+}
+.header {
+  font-size: 78px;
+}
+h1 {
+  margin-left: 2%;
+  color: rgb(73, 71, 71);
+}
+.Cointainer-buttons {
+  display: inline;
+}
+#button1 {
+  background: rgb(168, 168, 255);
+  margin-top: 20px;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+#button2 {
+  margin-top: 20px;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+  width: 100%;
+  margin-bottom: 2%;
+  background: rgb(122, 122, 243);
+}
+.circle {
+  margin: 0%;
+  position: relative;
+  left: 0%;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 90px;
+  padding-top: 30%;
+  color: black;
+  height: 200px;
+  width: 250px;
+  background-color: rgb(220, 220, 247);
+  border: 2px solid rgb(158, 155, 155);
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
